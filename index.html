@@ -32,18 +32,21 @@
     <section>   
         <h1>Contador</h1>
         <p>0</p>
-        <button onclick="aumentar">Mais</button>
-        <button onclick="diminuir">Menos</button>
+        <button onclick="mais">Mais</button>
+        <button onclick="menos">Menos</button>
     </section>
     <script> 
-        function aumentar() {
-            console.log("Aumentar...")
 
+        // estado da minha aplicação
+        let numero = 0
+
+        function mais() {
+            numero = numero + 1
+            console.log(numero)
         }
 
-        function diminuir()  {
+        function menos()  {
             console.log("Diminuir...")
-            
         }
     </script>
 
