@@ -4,7 +4,7 @@
     <title>Contador Hello Kitty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
@@ -25,15 +25,15 @@
 
             min-height: 100vh;
             color: #ff69b4;
-            font-family: 'Pacifico', cursive;
-            text-shadow: 2px 2px 4px rgba(255, 225, 255, 0.7);
+            font-family: 'Titan One', cursive;
+            text-shadow: 5px 5px 5px rgba(255, 225, 255, 0.5);
 
             display: grid;
             place-items: center;
         }
 
         section {background-color: rgba(255, 255, 255, 0.65);
-            padding: 40px 60px;
+            padding: 60px 40px;
             border-radius: 30px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -43,18 +43,30 @@
     h1 {
         font-size: 3.5em;
         margin-bottom: 20px;
-        color: #e91e63;
+        color: white;
+        text-shadow:
+            -4px -4px 0 #e91e63,
+            4px -4px 0 #e91e63,
+            -4px 4px 0 #e91e63,
+            4px 4px 0 #e91e63;
+            0px 5px 10px rgba(0, 0, 0, 0.2);
     }
 
     p#resultado {
         font-size: 120px;
         margin-bottom: 30px;
-        color: #ff1493;
+        color: white;
+        text-shadow:
+        -3px -3px 0 #ff1493,  
+            3px -3px 0 #ff1493,
+            -3px 3px 0 #ff1493,
+            3px 3px 0 #ff1493,
+            0px 8px 15px rgba(0, 0, 0, 0.3);;
     }
 
     button {
         background-color: #ffb6c1;
-        color: #8b0000;
+        color: white;
         padding: 15px 30px;
         margin: 0 10px;
         border: 3px solid #ff1493;
@@ -62,8 +74,14 @@
         font-size: 1.5em;
         cursor: pointer;
         transition: all 0.3s ease;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Titan One', cursive;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-shadow:
+        -3px -3px 0 #ff1493,  
+            3px -3px 0 #ff1493,
+            -3px 3px 0 #ff1493,
+            3px 3px 0 #ff1493,
+            0px 8px 15px rgba(0, 0, 0, 0.3);;
     }
 
     button:hover {
