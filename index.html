@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Meu Contator</title>
+    <title>Contador Hello Kitty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%;
+        }
+        
         * {
-            margin: 0 ;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            border: 10px solid rgb(0, 204, 255);
+            background-image: url('https://i.pinimg.com/1200x/5f/cf/06/5fcf0674a086c282ced62176a580de1b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
             min-height: 100vh;
-            background-color: beige;
-            color: black;
+            color: #ff69b4;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 4px rgba(255, 225, 255, 0.7);
+
             display: grid;
             place-items: center;
         }
-        section {
-            background-color: rgb(225, 255, 255, 100%);
-            padding: 50px;
-            border-radius: 50px;
-            text-align: center;
-        }
 
-        p {
-            font-size: 100px
-        }
+        section {background-color: rgba(255, 255, 255, 0.65);
+            padding: 40px 60px;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid #ff1493;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        color: #e91e63;
+    }
+
+    p#resultado {
+        font-size: 120px;
+        margin-bottom: 30px;
+        color: #ff1493;
+    }
+
+    button {
+        background-color: #ffb6c1;
+        color: #8b0000;
+        padding: 15px 30px;
+        margin: 0 10px;
+        border: 3px solid #ff1493;
+        border-radius: 25px;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Pacifico', cursive;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+        background-color: #ff1493;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+       
     </style>
 </head>
 <body>
     <section>   
-        <h1>Contador</h1>
+        <h1>🎀 Hello Kitty Contador 🎀</h1>
         <p id="resultado"></p>
         <button onclick="diminuir()">Menos</button>
         <button onclick="aumentar()">Mais</button>
